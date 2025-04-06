@@ -27,9 +27,9 @@
 
 ## Keywork utilization:
 > Ability to run tests by keyword 'k' (TCs methods that contains a certain WORD/STR and not contain STR):
+> (in the below example, only the "test_TC1.py::test_divide" is running from my repository)
+> Note that I can utilize it for sanity tests or long and whatever...
 - pytest -v  -k "divide and not type"
-> (only: "test_TC1.py::test_divide" is running)
-> I can utilize it for sanity tests or long and whatever :)
 
 
 ## providing a list of the 2 slowest tests
@@ -38,7 +38,8 @@
 
 ## Tagging functionality:
 > -m for running only the tests tagged (or not tagged) as defined in quotation below: example for marking TCs: @pytest.mark.nice, @pytest.mark.slow
-> note: ignore the warning about potential typos... (you can ask pytest to ignore warning by adding to user prompt: --disable-warnings)
+> note: ignore the warning about potential typos... 
+> (you can ask pytest to ignore warning by adding to user prompt: --disable-warnings)
 - pytest -m "nice and slow"
 - pytest -m "nice or slow" (to run both tagged tests)
 
