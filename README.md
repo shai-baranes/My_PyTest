@@ -2,12 +2,12 @@
 
 
 - pytest -v -s --runxfail test_TC1.py
-	- s: report including the print statements
-	- v: verbose mode
-	- vv: additional verbosity (more info under the "short test summary info" section upon failure encounters)
-	- runxfail: for running also the marked xfail
-	- pytest -m (followed by tags): refer to below examples
-	- pytest -k (followed by test keywords/names): refer to below examples
+	- -s: report including the print statements
+	- -v: verbose mode
+	- -vv: additional verbosity (more info under the "short test summary info" section upon failure encounters)
+	- --runxfail: for running also the marked xfail
+	- -pytest -m (followed by tags): refer to below examples
+	- -pytest -k (followed by test keywords/names): refer to below examples
 	- --disable-warnings: add it when having potential annoying typos warning 
 
 
