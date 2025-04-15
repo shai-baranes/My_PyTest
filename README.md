@@ -52,3 +52,6 @@
 -----------------
 
 
+## notes
+> I was recently adding: '-e .' into the requirements.txt file (for some debug needs?)
+
