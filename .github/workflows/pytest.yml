@@ -32,4 +32,4 @@ jobs:
 
     - name: Run Pytest with Coverage
       run: |
-        pytest --verbose --cov=src/. --cov-report=term-missing --cov-report=html
+        pytest -v
