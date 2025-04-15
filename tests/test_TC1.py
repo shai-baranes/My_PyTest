@@ -111,6 +111,7 @@ from pytest_dependency import depends
 @pytest.mark.order(1)  # Ensure this test runs first (requires: >>pip install pytest-order)
 def test_divide_type_fails_and_triggers_skip():
 	assert isinstance(divide(10, 2), int)
+	# assert isinstance(divide(10, 2), float)
 
 
 @pytest.mark.dependency(name="test_B")
