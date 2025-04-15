@@ -1,8 +1,8 @@
 
 import os, sys
-script_path = os.path.realpath(os.path.dirname(__name__))
-os.chdir(script_path)
-sys.path.append("..")
+# script_path = os.path.realpath(os.path.dirname(__name__))
+# os.chdir(script_path)
+# sys.path.append("..")
 
 import pytest
 import unittest.mock as mock

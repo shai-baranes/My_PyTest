@@ -1,9 +1,12 @@
 
 # ---- to handle relative paths in my IDE --------
 import os, sys, time
-script_path = os.path.realpath(os.path.dirname(__name__))
-os.chdir(script_path)
-sys.path.append("..")
+
+# script_path = os.path.realpath(os.path.dirname(__name__))
+# os.chdir(script_path)
+# sys.path.append("..")
+
+
 # above mentioned steps will make 1 level up module available for import
 # here Client, Server and Common all 3 can be imported.
 
