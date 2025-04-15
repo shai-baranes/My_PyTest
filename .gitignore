@@ -1,2 +1,5 @@
 __pycache__
 my_pytest_project
+conftest.p_y
+src/.coverage                                                                                                                                                                
+tests/.coverage
