@@ -25,5 +25,5 @@ jobs:
 
     - name: Run Pytest
       run: |
-        cd test
-        pytest --verbose --disable-warnings --cov=. --cov-report=html  --cov-report=term-missing
+        set PYTHONPATH=%CD%
+        pytest --verbose --cov=src/. --cov-report=term-missing --cov-report=html
