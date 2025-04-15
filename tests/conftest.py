@@ -1,7 +1,7 @@
 import os, sys, time
-script_path = os.path.realpath(os.path.dirname(__name__))
-os.chdir(script_path)
-sys.path.append("..")
+# script_path = os.path.realpath(os.path.dirname(__name__))
+# os.chdir(script_path)
+# sys.path.append("..")
 
 
 import pytest
