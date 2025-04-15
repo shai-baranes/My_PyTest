@@ -54,4 +54,5 @@
 
 ## notes
 > I was recently adding: '-e .' into the requirements.txt file (for some debug needs?)
+> and after the worflow failed (due abiove) I also added the recommended: 'pyproject.toml' file (it also helps for modules to recognize my self created packages)
 
