@@ -3,3 +3,4 @@ my_pytest_project
 conftest.p_y
 src/.coverage                                                                                                                                                                
 tests/.coverage
+.coverage
