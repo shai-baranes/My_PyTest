@@ -4,3 +4,9 @@ conftest.p_y
 src/.coverage                                                                                                                                                                
 tests/.coverage
 .coverage
+results.txt
+report.txt
+temp_perplexity.txt
+htmlcov
+.pytest_cache
+report.txt
