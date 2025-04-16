@@ -10,3 +10,4 @@ temp_perplexity.txt
 htmlcov
 .pytest_cache
 report.txt
+pyproject.toml
