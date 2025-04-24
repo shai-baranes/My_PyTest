@@ -28,11 +28,11 @@ jobs:
       run: echo "PYTHONPATH=${{ github.workspace }}/src" >> $GITHUB_ENV
 
 
-    - name: Run Pytest with Coverage
-      run: |
-        pytest --verbose --cov=src/. --cov-report=term-missing --cov-report=html
-
-
     - name: Run mypy to validate type hints assignments
       run: |
         mypy src/TC1.py
+
+
+    - name: Run Pytest with Coverage
+      run: |
+        pytest --verbose --cov=src/. --cov-report=term-missing --cov-report=html
