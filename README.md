@@ -56,3 +56,5 @@
 > I was recently adding: '-e .' into the requirements.txt file (for some debug needs?)
 > and after the worflow failed (due abiove) I also added the recommended: 'pyproject.toml' file (it also helps for modules to recognize my self created packages)
 
+> I also added job to run mypy per commit, to validate all type-hints assignments (also helps to maintain robust project)
+> note that it is now in a step above the pytest, if it fails - the next pytest job is not running...

@@ -9,11 +9,11 @@ databse = {
 
 
 
-def get_user_from_db(id):
+def get_user_from_db(id: int) -> str | None:
 	return databse.get(id)
 
 
-def get_users(): # from URL JSON
+def get_users() -> str: # from URL JSON
 	response = requests.get("https://jsonplaceholder.typicode.com/users") # valid web site for testing purpose
 	if response.status_code == 200:
 		return response.json()
