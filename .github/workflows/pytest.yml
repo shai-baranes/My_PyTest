@@ -35,4 +35,4 @@ jobs:
 
     - name: Run mypy to validate type hints assignments
       run: |
-        mypy src/TC1.py        
+        mypy src/TC1.py
