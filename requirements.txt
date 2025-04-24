@@ -4,3 +4,4 @@ requests
 pytest_dependency
 pytest-mock
 pytest-order
+mypy

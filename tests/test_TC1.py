@@ -90,9 +90,6 @@ def test_divide_type_known_failure_2():
 	(5, -10, -5),
 	(-10, 10, 0),
 ])
-
-
-
 def test_multiple_add(a, b, result):
 	assert add(a, b) == result
 
