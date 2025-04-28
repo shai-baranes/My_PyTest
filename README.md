@@ -52,9 +52,28 @@
 -----------------
 
 
-## notes
+
+
+## mypy
+> I also added job to run mypy per commit, to validate all type-hints assignments (also helps to maintain robust project)
+> recently realized that in some single testing .py files, if a function is duplicated then mypy shall also alert it! (useful)
+> note that it is now in a step above the pytest, if it fails - the next pytest job is not running...
+
+also from per-plexity:
+> mypy only type-checks third-party libraries that either:
+
+> - Provide type hints inline and include a py.typed marker file (making them PEP 561 compatible)
+	[PEP 561](https://peps.python.org/pep-0561/): TBD text <br/>
+
+
+> - Or have a separate "stubs" package (like types-requests for requests)
+
+> If neither is present, mypy skips the module and shows this error
+
+
+
+
+## general notes
 > I was recently adding: '-e .' into the requirements.txt file (for some debug needs?)
 > and after the worflow failed (due abiove) I also added the recommended: 'pyproject.toml' file (it also helps for modules to recognize my self created packages)
 
-> I also added job to run mypy per commit, to validate all type-hints assignments (also helps to maintain robust project)
-> note that it is now in a step above the pytest, if it fails - the next pytest job is not running...

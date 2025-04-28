@@ -11,3 +11,5 @@ htmlcov
 .pytest_cache
 report.txt
 pyproject.toml
+tests/my_pytest_project.sublime-workspace
+dsds
