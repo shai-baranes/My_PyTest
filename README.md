@@ -63,17 +63,19 @@ also from per-plexity:
 > mypy only type-checks third-party libraries that either:
 
 > - Provide type hints inline and include a py.typed marker file (making them PEP 561 compatible)
-	[PEP 561](https://peps.python.org/pep-0561/): TBD text <br/>
+	[PEP 561](https://peps.python.org/pep-0561/): "Distributing and Packaging Type Information"
 
 
 > - Or have a separate "stubs" package (like types-requests for requests)
 
 > If neither is present, mypy skips the module and shows this error
 
+> TBD need also understanding how the newly added file: 'py.typed' can help us in the future (currently empty under the 'tests' folder)
 
+> TBD Also to investigate the packages to utilize DOC strings and type hints to later compile it into a readable document!!!
 
 
 ## general notes
 > I was recently adding: '-e .' into the requirements.txt file (for some debug needs?)
-> and after the worflow failed (due abiove) I also added the recommended: 'pyproject.toml' file (it also helps for modules to recognize my self created packages)
+> and after the workflow failed (due above) I also added the recommended: 'pyproject.toml' file (it also helps for modules to recognize my self created packages)
 
